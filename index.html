@@ -17,20 +17,23 @@
 <body>
 
   <header>
-    <img src="./images/logo.svg" alt="Sunnyside Logo">
-    <nav>
-      <a href="">About</a>
-      <a href="">Services</a>
-      <a href="">Projects</a>
-      <a href="" id="contact-btn">Contact</a>
-    </nav>
-  </header>
+    <div class="navbar">
+      <img src="./images/logo.svg" alt="Sunnyside Logo">
+      <nav>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Projects</a>
+        <a href="" id="contact-btn">Contact</a>
+      </nav>
+    </div>
 
-  <main>
     <div class="hero">
       <h1>We are creatives</h1>
       <img src="./images/icon-arrow-down.svg" alt="Icon of a downward pointing arrow">
     </div>
+  </header>
+
+  <main>
   
     <section class="articles">
       <article class="article-item" id="transform">
@@ -41,7 +44,10 @@
             We are a full-service creative agency specializing in helping brands grow fast. 
             Engage your clients through compelling visuals that do most of the marketing for you.
           </p>
-          <a href="" class="cta" id="transform-cta">Learn more</a>
+          <div class="cta" id="transform-cta">
+            <a href="" class="cta-text">Learn more</a>
+            <div class="cta-highlight"></div>
+          </div>
         </div>
       </article>
       
@@ -53,7 +59,10 @@
             Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, 
             we'll build and extend your brand in digital places.
           </p>
-          <a href="" class="cta" id="stand-out-cta">Learn more</a>
+          <div class="cta" id="stand-out-cta">
+            <a href="" class="cta-text">Learn more</a>
+            <div class="cta-highlight"></div>
+          </div>
         </div>
       </article>
     </section>
