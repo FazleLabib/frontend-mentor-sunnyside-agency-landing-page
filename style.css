@@ -65,6 +65,27 @@ nav {
     font-weight: 600;
 }
 
+.underline-effect {
+    position: relative;
+    display: inline-block;
+}
+  
+.underline-effect::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: var(--white);
+    transform: translateX(-50%); 
+    transition: width 0.2s ease;
+  }
+  
+.underline-effect:hover::before {
+    width: 100%;
+}
+
 #contact-btn {
     font-family: 'Fraunces', serif;
     text-transform: uppercase;
