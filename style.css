@@ -11,7 +11,7 @@
 
     --dark-desaturated-cyan: hsl(167, 40%, 24%);    /* (graphic design text) */
     --dark-blue: hsl(198, 62%, 26%);    /* (photography text) */
-    --dark-moderate-cyan: hsl(168, 34%, 41%);    /* (footer) */
+    --dark-moderate-cyan: hsl(167, 44%, 70%);    /* (footer) */
     
     /* ### Neutral */
     
@@ -301,11 +301,45 @@ nav {
     width: 100%;
 }
 
+    /**** FOOTER ****/
+
+footer {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-moderate-cyan);
+    padding: 3rem 0;
+}
+
+#footer-logo {
+    filter: invert(60%) sepia(25%) 
+            saturate(810%) hue-rotate(115deg) 
+            brightness(95%) contrast(90%)
+}
+
+.links {
+    display: flex;
+    gap: 5rem;
+}
+
+.links a {
+    color: var(--dark-desaturated-cyan);
+}
+
+.contact-list {
+    padding-top: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
 .attribution { 
-    font-size: 11px; 
+    font-size: 16px; 
     text-align: center; 
+    color: var(--very-dark-desaturated-blue);
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: var(--dark-desaturated-cyan); 
 }
