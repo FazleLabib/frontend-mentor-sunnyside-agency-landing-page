@@ -292,6 +292,14 @@ nav {
 
     /**** GALLERY ****/
 
+.gallery {
+    display: flex;
+}
+
+.gallery-item img {
+    width: 100%;
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
