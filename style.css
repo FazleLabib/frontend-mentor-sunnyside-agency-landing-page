@@ -177,6 +177,58 @@ nav {
     background-color: var(--soft-red);
 }
 
+.services {
+    width: 100%;
+    display: flex;
+}
+
+.services-item {
+    width: 50%;
+    text-align: center;
+    padding: 0 14rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+#graphic-design {
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+}
+
+#photography {
+    background-image: url(./images/desktop/image-photography.jpg);
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40rem;
+}
+
+#graphic-design-title, #graphic-design-paragraph {
+    color: var(--dark-desaturated-cyan);
+}
+
+#photography-title, #photography-paragraph {
+    color: var(--dark-blue);
+}
+
+.service-content .title {
+    font-family: 'Fraunces', serif;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.service-content .paragraph {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
