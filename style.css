@@ -33,6 +33,7 @@ a {
     text-decoration: none;
 }
 
+    /**** HEADER ****/
 header {
     background-image: url(./images/desktop/image-header.jpg);
     background-repeat: no-repeat;
@@ -91,6 +92,7 @@ nav {
     letter-spacing: 0.5rem;
 }
 
+    /**** ARTICLES ****/
 .articles {
     width: 100%;
     display: flex;
@@ -177,6 +179,7 @@ nav {
     background-color: var(--soft-red);
 }
 
+    /**** SERVICES ****/
 .services {
     width: 100%;
     display: flex;
@@ -226,6 +229,8 @@ nav {
     font-size: 1.5rem;
     line-height: 2.5rem;
 }
+
+    /**** TESTIMONIALS ****/
 
 .testimonials {
     display: flex;
@@ -284,6 +289,8 @@ nav {
     color: var(--grayish-blue);
     font-size: 1.25rem;
 }
+
+    /**** GALLERY ****/
 
 .attribution { 
     font-size: 11px; 
