@@ -322,7 +322,7 @@ footer {
 #footer-logo {
     filter: invert(60%) sepia(25%) 
             saturate(810%) hue-rotate(115deg) 
-            brightness(95%) contrast(90%)
+            brightness(95%) contrast(90%);
 }
 
 .links {
@@ -334,10 +334,20 @@ footer {
     color: var(--dark-desaturated-cyan);
 }
 
+.links a:hover {
+    transition: .2s ease-in;
+    color: var(--white);
+}
+
 .contact-list {
     padding-top: 4rem;
     display: flex;
     gap: 2rem;
+}
+
+.contact-list img:hover {
+    transition: .2s ease-in;
+    filter: brightness(0) invert(1);
 }
 
 .attribution { 
