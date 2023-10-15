@@ -20,6 +20,7 @@
     --dark-grayish-blue: hsl(232, 10%, 55%);
     --grayish-blue: hsl(210, 4%, 67%);
     --white: hsl(0, 0%, 100%) ;
+    --cream: hsl(30, 75%, 98%);
 
 }
 
@@ -27,6 +28,10 @@
     margin: 0;
     padding: 0;
     font-family: 'Barlow', sans-serif, 'Fraunces', serif;
+}
+
+body {
+    background-color: var(--cream);
 }
 
 a {
@@ -58,6 +63,48 @@ nav {
     font-size: 1.25rem;
     display: flex;
     gap: 5rem;
+}
+
+.mobile-nav {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-nav:hover {
+    transition: .2s ease-in;
+    transform: scale(120%);
+}
+
+.modal-nav {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    gap: 2rem;
+    left: 50%;
+    top: 6rem;
+    transform: translateX(-50%);
+    background-color: var(--cream);
+    text-align: center;
+    padding: 2rem;
+    z-index: 2;
+    width: 65%;
+}
+
+.modal-nav::before {
+    position: fixed;
+    content: "";
+    width: 0;
+    height: 0;
+    right: 0;
+    top: -1.5rem;
+    border-top: 2rem solid transparent;
+    border-bottom: 2rem solid transparent;
+    border-right: 2rem solid var(--cream);
+    z-index: -1;
+}
+
+.modal-nav .nav-link {
+    color: var(--dark-grayish-blue);
 }
 
 .navbar a {
@@ -93,6 +140,10 @@ nav {
     background-color: var(--white);
     border-radius: 2.5rem;
     padding: 1.25rem 2.5rem;
+}
+
+.modal-nav #contact-btn {
+    background-color: var(--yellow);
 }
 
 #contact-btn:hover {
@@ -403,6 +454,14 @@ footer {
 
     header {
         background-image: url(./images/mobile/image-header.jpg);
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
     }
 
     .hero {
