@@ -221,6 +221,7 @@ nav {
 }
 
     /**** SERVICES ****/
+
 .services {
     width: 100%;
     display: flex;
@@ -262,6 +263,7 @@ nav {
 
 .service-content .title {
     font-family: 'Fraunces', serif;
+    font-weight: 900;
     font-size: 3rem;
     padding-bottom: 2rem;
 }
@@ -334,7 +336,8 @@ nav {
     /**** GALLERY ****/
 
 .gallery {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .gallery-item img {
