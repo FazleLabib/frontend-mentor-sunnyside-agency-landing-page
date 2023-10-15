@@ -92,7 +92,7 @@ nav {
     color: var(--very-dark-desaturated-blue);
     background-color: var(--white);
     border-radius: 2.5rem;
-    padding: 1.5rem 2.5rem;
+    padding: 1.25rem 2.5rem;
 }
 
 #contact-btn:hover {
