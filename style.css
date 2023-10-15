@@ -128,6 +128,10 @@ nav {
     transform: translateX(-50%); 
     transition: width 0.2s ease;
 }
+
+.modal-nav .underline-effect::before {
+    background-color: var(--yellow);
+}
   
 .underline-effect:hover::before {
     width: 100%;
@@ -150,6 +154,10 @@ nav {
     transition: .2s ease-in;
     color: var(--white);
     background-color: hsla(0, 0%, 100%, 0.25) ;
+}
+
+.modal-nav #contact-btn:hover {
+    background-color: var(--soft-red);
 }
 
 .hero {
