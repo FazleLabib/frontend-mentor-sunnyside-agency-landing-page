@@ -287,13 +287,15 @@ nav {
 }
 
 .services-item {
+    display: flex;
+    flex-direction: column;
     width: 50%;
+    aspect-ratio: 1.2;
     text-align: center;
-    padding: 0 14rem;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 90vh;
+    justify-content: flex-end;
 }
 
 #graphic-design {
@@ -305,11 +307,8 @@ nav {
 }
 
 .service-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 35rem;
+    padding: 0 13rem;
+    margin-bottom: 6rem;
 }
 
 #graphic-design-title, #graphic-design-paragraph {
@@ -535,9 +534,8 @@ footer {
     }
     
     .services-item {
-        width: auto;
-        padding: 0;
-        min-height: none;
+        width: 100%;
+        aspect-ratio: 5/8;
     }
     
     #graphic-design {
@@ -550,7 +548,6 @@ footer {
     
     .service-content {
         padding: 0 2rem;
-        margin-top: 120%;
     }
     
     .service-content .title {
